@@ -85,9 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->close();
 
     } elseif ($action === 'update_quantity') {
-        // You also need to add logic to handle the 'update_quantity' action
-        // which is being called in your script.js.
-        // The following is an example implementation:
+
         $product_id = intval($_POST['product_id']);
         $quantity = intval($_POST['quantity']);
 

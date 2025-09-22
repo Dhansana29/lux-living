@@ -42,13 +42,14 @@ if ($conn->connect_error) {
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                 </ul>
                 <div class="navbar-nav navbar-icons">
                     <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
                     <a class="nav-link active" href="cart.php"><i class="bi bi-cart3"></i></a>
-                    <a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a>
+                    <a class="nav-link" href="wishlist.php"><i class="bi bi-heart"></i></a>
+                    <a class="nav-link" href="login_register.php"><i class="bi bi-person-circle"></i></a>
                 </div>
             </div>
         </div>
@@ -117,7 +118,7 @@ if ($conn->connect_error) {
                         <span class="fw-bold fs-5">Total:</span>
                         <span class="fw-bold fs-5" id="cart-total">$<?php echo number_format($total_price, 2); ?></span>
                     </div>
-                    <button class="btn btn-success btn-lg mt-4">Proceed to Checkout</button>
+                    <a href="checkout.php" class="btn btn-success btn-lg mt-4">Proceed to Checkout</a>
                 </div>
             </div>
         </div>
@@ -163,15 +164,15 @@ if ($conn->connect_error) {
                     <ul class="list-unstyled text-white-50">
                         <li class="d-flex align-items-start mb-2">
                             <i class="bi bi-geo-alt-fill me-2"></i>
-                            <span>123 Plant Street, Green City, 45678</span>
+                            <span>Homagama, Sri Lanka</span>
                         </li>
                         <li class="d-flex align-items-start mb-2">
                             <i class="bi bi-envelope-fill me-2"></i>
-                            <span>info@luxliving.com</span>
+                            <span>contact@luxliving.com</span>
                         </li>
                         <li class="d-flex align-items-start mb-2">
                             <i class="bi bi-telephone-fill me-2"></i>
-                            <span>+1 234 567 890</span>
+                            <span>011 234 5678</span>
                         </li>
                     </ul>
                 </div>

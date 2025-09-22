@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -55,13 +56,14 @@ if ($conn->connect_error) {
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                 </ul>
                 <div class="navbar-nav navbar-icons">
                     <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
                     <a class="nav-link" href="cart.php"><i class="bi bi-cart3"></i></a>
-                    <a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a>
+                    <a class="nav-link" href="wishlist.php"><i class="bi bi-heart"></i></a>
+                    <a class="nav-link" href="login_register.php"><i class="bi bi-person-circle"></i></a>
                 </div>
             </div>
         </div>
@@ -73,7 +75,7 @@ if ($conn->connect_error) {
                 <div class="col-lg-6 hero-text">
                     <h1>Bring Nature Into<br>Your <span class="highlight">Home</span></h1>
                     <p>Find the perfect plant for your space. We deliver healthy, happy plants to your door.</p>
-                    <a href="#" class="btn btn-primary">Shop All Plants <i class="bi bi-arrow-right"></i></a>
+                    <a href="shop.php" class="btn btn-primary">Shop All Plants <i class="bi bi-arrow-right"></i></a>
                 </div>
                 <div class="col-lg-6 hero-image-container">
                     <img src="https://images.unsplash.com/photo-1463320898484-cdee8141c787?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beautiful Potted Plant" class="hero-image">
@@ -227,7 +229,7 @@ if ($conn->connect_error) {
         </div>
     </section>
 
-    
+
     <!--Footer Section-->
     <footer class="bg-dark text-white py-5">
         <div class="container">
@@ -267,15 +269,15 @@ if ($conn->connect_error) {
                     <ul class="list-unstyled text-white-50">
                         <li class="d-flex align-items-start mb-2">
                             <i class="bi bi-geo-alt-fill me-2"></i>
-                            <span>123 Plant Street, Green City, 45678</span>
+                            <span>Hoamagama, Sri Lanka</span>
                         </li>
                         <li class="d-flex align-items-start mb-2">
                             <i class="bi bi-envelope-fill me-2"></i>
-                            <span>info@luxliving.com</span>
+                            <span>contact@luxliving.com</span>
                         </li>
                         <li class="d-flex align-items-start mb-2">
                             <i class="bi bi-telephone-fill me-2"></i>
-                            <span>+1 234 567 890</span>
+                            <span>011 234 5678</span>
                         </li>
                     </ul>
                 </div>
